@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDH Pharmacy Inventory Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🏥 HDH Pharmacy Inventory Pro</h1>
+</header>
+
+<nav class="menu">
+<button>Dashboard</button>
+<button>Inventory</button>
+<button>Sales</button>
+<button>Reports</button>
+<button>Backup</button>
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Add Medicine</h2>
+
+<label>Medicine Name</label>
+<input id="medicineName" type="text">
+
+<label>Company</label>
+<input id="companyName" type="text">
+
+<label>Selling Price</label>
+<input id="sellingPrice" type="number">
+
+<label>Box Stock</label>
+<input id="boxStock" type="number">
+
+<label>Strip Per Box</label>
+
+<select id="stripSize">
+<option value="7">7</option>
+<option value="10">10</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="custom">Custom</option>
+</select>
+
+<input id="customStrip" placeholder="Custom Strip Size">
+
+<button id="addMedicine">
+Add Medicine
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Universal Search</h2>
+
+<input
+id="searchMedicine"
+placeholder="Search Medicine...">
+
+</div>
+
+<div class="card">
+
+<h2>Inventory</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Medicine</th>
+
+<th>Company</th>
+
+<th>Price</th>
+
+<th>Stock</th>
+
+</tr>
+
+</thead>
+
+<tbody id="medicineTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
